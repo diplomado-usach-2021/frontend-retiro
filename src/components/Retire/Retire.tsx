@@ -128,18 +128,18 @@ const Retire = () => {
                         Detalle de su solicitud:
                     </Typography>
                     <Typography variant="subtitle1" gutterBottom component="div">
-                        <b>Moto a retirar:</b> {dxc.dxc ? new Intl.NumberFormat('de-DE').format(dxc.dxc) : 0 }
+                        <b>Moto a retirar:</b> ${dxc.dxc ? new Intl.NumberFormat('de-DE').format(dxc.dxc) : 0 }
                     </Typography>
                     <Typography variant="subtitle1" gutterBottom component="div">
-                        <b>Saldo disponible</b> {dxc.saldo ? new Intl.NumberFormat('de-DE').format(dxc.saldo) : 0 }
+                        <b>Saldo disponible</b> ${dxc.saldo ? new Intl.NumberFormat('de-DE').format(dxc.saldo) : 0 }
                     </Typography>
                     <Typography variant="subtitle1" gutterBottom component="div">
-                        <b>Impuesto retiro de 10%:</b> {dxc.impuesto ? new Intl.NumberFormat('de-DE').format(dxc.impuesto) : 0 }
+                        <b>Impuesto retiro de 10%:</b> ${dxc.impuesto ? new Intl.NumberFormat('de-DE').format(dxc.impuesto) : 0 }
                     </Typography>
                     {
                         responseDxc && 
                         <Typography variant="caption" display="block" gutterBottom>
-                            Cálculos hechos en base a ahorro de : {new Intl.NumberFormat('de-DE').format(dxc.ahorro)} y sueldo de {new Intl.NumberFormat('de-DE').format(dxc.sueldo)}
+                            Cálculos hechos en base a un ahorro de: ${new Intl.NumberFormat('de-DE').format(dxc.ahorro)} y sueldo de ${new Intl.NumberFormat('de-DE').format(dxc.sueldo)}
                         </Typography>
                     }
                     
