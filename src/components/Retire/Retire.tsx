@@ -128,19 +128,19 @@ const Retire = () => {
                     <Typography variant="h6" gutterBottom component="div">
                         Detalle de su solicitud:
                     </Typography>
-                    <Typography id="getAmount" variant="subtitle1" gutterBottom component="div">
-                        <b>Moto a retirar:</b> ${dxc.dxc ? new Intl.NumberFormat('de-DE').format(dxc.dxc) : 0 }
+                    <Typography variant="subtitle1" gutterBottom component="div">
+                        Moto a retirar: <b id='getAmount'> ${dxc.dxc ? new Intl.NumberFormat('de-DE').format(dxc.dxc) : 0 }</b>
                     </Typography>
-                    <Typography id="getAvailable" variant="subtitle1" gutterBottom component="div">
-                        <b>Saldo disponible</b> ${dxc.saldo ? new Intl.NumberFormat('de-DE').format(dxc.saldo) : 0 }
+                    <Typography variant="subtitle1" gutterBottom component="div">
+                        Saldo disponible: <b id="getAvailable">${dxc.saldo ? new Intl.NumberFormat('de-DE').format(dxc.saldo) : 0 }</b>
                     </Typography>
-                    <Typography id="getTax" variant="subtitle1" gutterBottom component="div">
-                        <b>Impuesto retiro de 10%:</b> ${dxc.impuesto ? new Intl.NumberFormat('de-DE').format(dxc.impuesto) : 0 }
+                    <Typography  variant="subtitle1" gutterBottom component="div">
+                        Impuesto retiro de 10%: <b id="getTax"> ${dxc.impuesto ? new Intl.NumberFormat('de-DE').format(dxc.impuesto) : 0 }</b> 
                     </Typography>
                     {
                         responseDxc && 
                         <Typography id="calculateValues" variant="caption" display="block" gutterBottom>
-                            Cálculos hechos en base a un ahorro de: ${new Intl.NumberFormat('de-DE').format(dxc.ahorro)} y sueldo de ${new Intl.NumberFormat('de-DE').format(dxc.sueldo)}
+                            Cálculos hechos en base a un ahorro de: <b id='ahorro'>${new Intl.NumberFormat('de-DE').format(dxc.ahorro)}</b> y sueldo de <b id='ahorro'>${new Intl.NumberFormat('de-DE').format(dxc.sueldo)}</b> 
                         </Typography>
                     }
                     
