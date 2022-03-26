@@ -98,6 +98,7 @@ const Retire = () => {
                 <Grid container sx={{mt:'10px'}} justifyContent="center">
                     <Grid item xs={12} md={6}>
                         <Button
+                            id="button-calculate"
                             type="submit"
                             fullWidth
                             variant="contained"
